@@ -1,0 +1,81 @@
+/* selector universal > permite borrar modelos por defaut / reiniciar estilos * */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-container {
+    background-color: rgba(114, 186, 0, 0.338);
+    color: rgb(24, 19, 54);
+    padding: 20px; 
+    display: flex; /* sin esta etiqueta, hay etiquetas que vamos a utilizar que no pordrian ser leidas por el html "activa los poderes del flex" ej*/
+    justify-content: center;
+}
+
+/*para distribuir mas elementos : */
+.menu {
+    border: 1px solid rgba(15, 12, 44, 0.402);
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* JUSTIFY-CONTENT > es para organizar los elementos horizontalmente*/
+
+.product-container {
+    background-color: rgba(0, 255, 255, 0.274);
+    color: blueviolet;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    /* para alinear verticalmente ALIGN-ITEMS*/
+    align-items: center;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 80%;
+    display: flex;
+    justify-content:center;
+    /*cuando desbordan los elementos se activa flex-wrap: wrap, los elementos se amoldan a la pantalla*/
+    flex-wrap: wrap;
+    /*direccion > flex-direction: column; */
+}
+
+/*organizar los elementos con flexbox > elegir el orden de un elemento flexible sin afectar los elementos circundantes > ORDER , valor positivo mas a la derecha, valor negativo mas a la izquierda*/
+
+.first-item {
+    order: 1;
+
+}
+.last-item{
+    padding: 20px;
+    order: -1;
+}
+
+
+/* ver juego > http://www.flexboxdefense.com ver notas que propone */
+/*Now you have more tower groups at your disposal! Use justify-content to move the towers into position. justify-content accepts the following values:
+flex-start: group items at the start of a container's main axis
+flex-end: group items at the end of the main axis
+center: group items in the center of the main axis
+space-between: evenly distribute items along the main axis such that the first item aligns at the start and the final item aligns at the end
+space-around: evenly distribute items along the main axis such that all items have equal space around them
+
+
+
+Now some of the groups have vertical space, which is the perfect opportunity to use the align-items property. align-items positions a container's items across its cross axis and accepts the following values:
+flex-start: align items across the start of a container's cross axis
+flex-end: align items across the end of the cross axis
+center: align items across the center of the cross axis
+Note: align-items also accepts the values baseline (align items such that their baselines line up) and stretch (stretch items such that they span the entire cross axis), but these values cannot be used in Flexbox Defense.*/
